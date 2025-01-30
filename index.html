@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudoku Solver</title>
+  <link rel="icon" href="Sudoku.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+</head>
+<body>
+    <div id="main-content">
+        <!-- Header Bar with Logo and Text -->
+        <header class="header">
+          <div class="logo-container">
+            <img src="DJPATIL031.png" alt="Logo" class="logo">
+            <div>
+              <h1 class="logo-text">BinaryBrains</h1>
+              <p class="logo-subtext">Brains That Think in Binary</p>
+            </div>
+          </div>
+          <!-- Toggle Button with Sun and Moon Icons -->
+          <button class="toggle-btn" onclick="toggleMode()">
+            <span class="sun-icon">🌞</span> <span class="moon-icon">🌜</span>
+          </button>
+        </header>
+    </div>
+  
+    <!-- Title for Sudoku Solver -->
+    <h2>Sudoku Solver</h2>
+
+    <!-- Sudoku Grid -->
+    <div class="grid" id="sudoku-grid"></div>
+    
+    <!-- Buttons (without the toggle button) -->
+    <div class="buttons">
+      <button onclick="solveSudoku()">Solve</button>
+      <button onclick="clearBoard()">Clear</button>
+    </div>
+
+    <!-- To Connect With Me Section -->
+    <div class="connect-with-me">
+      <h3>To Connect With Me</h3>
+    </div>
+
+    <!-- Social Links -->
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/mr-dhananjay-patil-0172902a2/" target="_blank" class="social-icon linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+    
+        <a href="https://github.com/BinaryC0DE4U" target="_blank" class="social-icon github">
+          <i class="fab fa-github"></i>
+        </a>
+    </div>
+
+
+
+    <!-- Loader (hidden initially) -->
+    <div id="loader" style="display: none;">
+      <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+      <dotlottie-player 
+        src="https://lottie.host/bdfe97f3-0f21-4eae-852d-bff9ad5afbe9/H063BxiI9y.lottie" 
+        background="transparent" 
+        speed="1" 
+        style="width: 450px; height: 450px" 
+        direction="1" 
+        playMode="normal" 
+        loop 
+        autoplay>
+      </dotlottie-player>
+    </div>
+  
+
+  
+    <script src="script.js"></script>
+</body>
+</html>
